@@ -1,36 +1,43 @@
-Birthday Reminder App
-This simple React application displays a list of birthdays based on the provided data and allows users to clear the displayed birthdays.
+# React Tours Project
 
-Overview
-The application fetches a list of birthdays from the data.js file, displaying each person's name, age, and image in a list format.
+This project is a simple React application that fetches tour information from an API and displays it to users. Users have the ability to view available tours, get more details about each tour, and remove tours they are not interested in.
 
-How to Use
-Clone this repository to your local machine.
-Navigate to the project directory.
-Install dependencies using npm install.
-Run the application with npm start.
-View the birthdays displayed on the page along with the count of birthdays listed.
-Click the "Clear All" button to remove all displayed birthdays.
-Project Structure
-data.js: Contains an array of objects representing individuals' information (name, age, image).
-App.js: The main component handling the state and rendering of the application.
-List.js: Renders the list of birthdays using the data provided.
-Running the Application
-To run this application locally:
+## Features
 
-# Navigate to the project directory
+- **Fetching Tours**: The app fetches tour data from an external API (`https://course-api.com/react-tours-project`) using `fetch` and displays them.
+- **Tour Display**: Tours are displayed with their names, prices, images, and brief descriptions. Users can expand to view more details or collapse the description.
+- **Removing Tours**: Users can remove tours they are not interested in by clicking the "Not Interested" button.
+- **Refreshing Tours**: If no tours are left, users can click the "Refresh" button to fetch tours again.
 
-cd birthday-reminder-app
+## Tech Stack
 
-# Install dependencies
+- **React**: The entire application is built using React, including functional components and hooks.
+- **Bootstrap**: Bootstrap is used for styling and the Button component.
 
-npm install
+## Usage
 
-# Run the application
+1. **Install dependencies:**
 
-npm start
-Technologies Used
-React
-JavaScript (ES6+)
-Credits
-This project is inspired by tutorials and courses on React.
+    ```bash
+    npm install
+    ```
+
+2. **Run the application:**
+
+    ```bash
+    npm start
+    ```
+
+3. **Access the application in your browser at** `http://localhost:3000`.
+
+## Folder Structure
+
+- **`src/components`**: Contains React components used in the application.
+- **`src/App.js`**: Main component handling state and rendering of tours.
+- **`src/Loading.js`**: Component for displaying a loading indicator.
+- **`src/Tours.js`**: Component to render a list of tours.
+- **`src/Tour.js`**: Component to display individual tour details.
+
+
+
+
